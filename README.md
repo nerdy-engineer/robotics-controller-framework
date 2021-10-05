@@ -1,6 +1,6 @@
 # robotics-controller-framework
 
-Generic framework for communicating between a microcontroller and a higher-power hub controller (e.g. Raspberry Pi).
+Generic framework for communicating between a microcontroller (like an Arduino, STM32, Teensy, etc.) and a higher-power "hub" controller (e.g. Raspberry Pi, Jetson, or PC).
 
 
 ## protocol
