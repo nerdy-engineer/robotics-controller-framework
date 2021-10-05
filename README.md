@@ -1,7 +1,9 @@
 # robotics-controller-framework
 
-Generic framework for communicating between a microcontroller (like an Arduino, STM32, Teensy, etc.) and a higher-power "hub" controller (e.g. Raspberry Pi, Jetson, or PC).
+This is a generic framework for communicating between a microcontroller (like an Arduino, STM32, Teensy, etc.) and a higher-power "hub" controller (e.g. Raspberry Pi, Jetson, or PC).
 
+## purpose
+In a multi-processor robotics (or really almost any multi-controller embedded) application, it can be painful to re-engineer a full-duplex messaging system for every project. This framework doesn't attempt to condense or optimize message size, though down the road that could be a goal, if you're looking for something data-dense or supports compression, try protobufs or something. This is supposed to be easy to use, easy to understand (especially for beginners in robotics/software), and simple to implement.
 
 ## protocol
 
@@ -29,6 +31,7 @@ There is a minimal message set used to communicate between the controllers:
     * |"r"|\<designator>|\<payload>|
 * Control
     * Allows one processor to set a control variable on the other processor.
+    * Expects an "ACK" (`0x07`) back
     * **Variable message length**
     * |"C"|\<designator>|\<payload>|
 * IRQ
