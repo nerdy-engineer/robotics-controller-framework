@@ -1,0 +1,79 @@
+{
+    "interface": 
+    {
+        "heartbeat period": 500
+    },
+
+    "controls":
+    [
+        {
+            "type":
+            {
+                "name": "int8",
+                "values": 1,
+                "bytes": 1,
+                "bits": 8
+            },
+            "name": "Status",
+            "designator": "S",
+            "function": "indication"
+        },
+        {
+            "type":
+            {
+                "name": "vec2",
+                "values": 2,
+                "bytes": 1,
+                "bits": 8,
+                "description": "<X>, <Y>"
+            },
+            "name": "Steering",
+            "designator": "M",
+            "function": "motion",
+        }
+    ],
+
+    "sensors":
+    [
+        {
+            "type": {
+                "name": "quaternion",
+                "values": 4,
+                "bytes": 2,
+                "bits": 10,
+                "description": "<R>,<i>,<j>,<k>"
+            },
+            "name": "IMU",
+            "designator": "S",
+            "function": "orientation"
+        }
+    ],
+
+    "irq":
+    [
+        {
+            "type":
+            {
+                "name": "int8",
+                "values": 1,
+                "bytes": 1,
+                "bits": 8
+            },
+            "name": "Battery",
+            "designator": "B",
+            "function": "power"
+        },
+        {
+            "type":
+            {
+                "name": "boolean",
+                "values": 1,
+                "bytes": 1,
+                "bits": 1
+            },
+            "name": "E-Stop",
+            "designator": "E",
+            "function": "estop"
+        }
+    ]
+}
