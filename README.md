@@ -17,31 +17,31 @@ There is a minimal message set used to communicate between the controllers:
     * Lost heartbeat detection: Both the device and the master can detect a missing heartbeat from the other processor.
     * Health reporting: Heartbeats report actual time between heartbeats for diagnosing when a processor is overloaded.
     * **Fixed message length**
-    * |"H"|\<counter>|\<milliseconds since last heartbeat sent>|
+    * | "H" | \<counter> | \<milliseconds since last heartbeat> |
 * Initialization
     * >"Here's a little about me."
     * This is a JSON message used to let the other processor know all of the interfaces available.
     * **Variable message length**
-    * |"J"|\<designator>|\<payload>|
+    * | "J" | \<designator> | \<payload> |
 * Request
     * >"I need to know the value of \<some field>."
     * Allows one processor to request information from the other processor using designators from the initialization JSON files.
     * A request expects a `response` from the other processor.
     * **Fixed message length**
-    * |"R"|\<designator>|\<payload>|
+    * | "R" | \<designator> | \<payload> |
 * Response
     >* "Here's the information you requested."
     * Replies to a `request` from the other processor.
     * **Variable message length**
-    * |"r"|\<designator>|\<payload>|
+    * | "r" | \<designator> | \<payload> |
 * Control
     * >"I need you to do \<something> now."
     * Allows one processor to set a control variable on the other processor.
     * Expects an "ACK" (`0x07`) back
     * **Variable message length**
-    * |"C"|\<designator>|\<payload>|
+    * | "C" | \<designator> | \<payload> |
 * IRQ
     * >"I really want you to know about this, but do with it what you will."
     * Allows a processor to push an "important" message to the other processor unsolicited (i.e. without requiring a `reqest` to first send the data).
     * **Variable message length**
-    * |"!"|\<designator>|\<payload>|
+    * | "!" | \<designator> | \<payload> |
