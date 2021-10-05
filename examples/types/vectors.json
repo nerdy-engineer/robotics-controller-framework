@@ -1,0 +1,57 @@
+{
+    "type": {
+        "name": "vec2",
+        "values": 2,
+        "bytes": 2,
+        "description": "2D vector of 16-bit integers"
+    }
+}
+
+{
+    "type": {
+        "name": "vec2",
+        "values": 2,
+        "bytes": 4,
+        "description": "2D vector of 32-bit integers"
+    }
+}
+
+{
+    "type": {
+        "name": "vec3",
+        "values": 3,
+        "bytes": 4,
+        "description": "3D vector of 32-bit integers"
+    }
+}
+
+{
+    "type": {
+        "name": "quaternion",
+        "values": 2,
+        "bytes": 4,
+        "scale": 0.00000000023283064365386962890625,
+        "description": "quaternion of 32-bit integers"
+    }
+}
+
+
+{
+    "type": {
+        "name": "unit-vec2",
+        "values": 2,
+        "bytes": 4,
+        "scale": 0.00000000023283064365386962890625,
+        "description": "2D vector of 32-bit integers"
+    }
+}
+
+{
+    "type": {
+        "name": "unit-vec3",
+        "values": 3,
+        "bytes": 4,
+        "scale": 0.00000000023283064365386962890625,
+        "description": "3D vector of 32-bit integers"
+    }
+}

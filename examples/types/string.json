@@ -1,0 +1,38 @@
+{
+    "type": {
+        "name": "char",
+        "values": 1,
+        "bytes": 1,
+        "description": "Character type"
+    }
+}
+
+
+{
+    "type": {
+        "name": "string-short",
+        "values": -1,
+        "bytes": 1,
+        "description": "String less than 256 characters long"
+    }
+}
+
+
+{
+    "type": {
+        "name": "string-long",
+        "values": -2,
+        "bytes": 1,
+        "description": "String less than 65 thousand characters long"
+    }
+}
+
+
+{
+    "type": {
+        "name": "string-very-long",
+        "values": -4,
+        "bytes": 1,
+        "description": "String less than 4.2 billion characters long"
+    }
+}

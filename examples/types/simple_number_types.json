@@ -1,0 +1,54 @@
+{
+    "type": {
+        "name": "bool",
+        "values": 1,
+        "bits": 1,
+        "bytes": 1,
+        "description": "boolean value (True/False)"
+    }
+}
+
+{
+    "type": {
+        "name": "int16",
+        "values": 1,
+        "bytes": 2,
+        "description": "16-bit signed integer"
+    }
+}
+
+{
+    "type": {
+        "name": "int32",
+        "values": 1,
+        "bytes": 4,
+        "description": "32-bit signed integer"
+    }
+}
+
+{
+    "type": {
+        "name": "uint8",
+        "values": 1,
+        "bytes": 1,
+        "description": "8-bit unsigned integer"
+    }
+}
+
+{
+    "type": {
+        "name": "uint16",
+        "values": 1,
+        "bytes": 2,
+        "description": "16-bit unsigned integer"
+    }
+}
+
+{
+    "type": {
+        "name": "uint32",
+        "values": 1,
+        "bytes": 4,
+        "description": "32-bit unsigned integer"
+    }
+}

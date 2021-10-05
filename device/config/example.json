@@ -29,7 +29,7 @@
             },
             "name": "Steering",
             "designator": "M",
-            "function": "motion",
+            "function": "motion"
         }
     ],
 
