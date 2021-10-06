@@ -39,3 +39,24 @@
     * `Optional`
     * Mostly a developer tool to keep track of what each type is representing.
 
+
+## Control
+  * Type
+      * `Required`
+      * See "json_config_help.md" for documentation on the "type" configuration
+  * Name
+      * `Required`
+      * Unique field name, mostly used for display purposes on the master end, but may be used internally for a unique identifier.
+  * Designator
+      * `Required`
+      * Single-Character identifier used to signal what control is being accessed
+      * Control designators must be unique
+  * Function
+      * `Required`
+      * Signals the other processor for what this kind of control does.
+      * Examples
+        * Motion
+        * Indication
+        * Mode
+        * Enable/Disable
+        * etc.
